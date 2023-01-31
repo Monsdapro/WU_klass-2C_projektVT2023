@@ -1,0 +1,27 @@
+
+
+#burger_icon div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 15%;
+    transition: all, 0.5s;
+}
+
+#burger_icon {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.burger_meny_showing #line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger_meny_showing #line_2 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger_meny_showing #line_3 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
