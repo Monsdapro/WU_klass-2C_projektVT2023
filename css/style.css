@@ -1,4 +1,19 @@
+.burger_meny_showing #burger_meny_list {
 
+}
+
+#grid_parent {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-template-rows: 20px;
+    grid-template-areas: 
+    "he na"
+    "fo fo";
+}
+
+.burger_meny_showing #grid_parent {
+
+}
 
 #burger_icon div {
     width: 25px;
