@@ -1,13 +1,45 @@
-.burger_meny_showing #burger_meny_list {
+* {
+    margin: 0px;
+}
 
+#header {
+    margin: 2px;
+    z-index: 2;
+}
+
+/* placeholder */
+#a {
+    grid-area: pa;
+}
+
+.burger_meny_showing #burger_meny_list {
+    top: -100%
+}
+
+#burger_meny_list {
+    background-color: lightgreen;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all, 1s;
+    z-index: 1;
 }
 
 #grid_parent {
+    height: 1fr;
+    width: 1fr;
     display: grid;
     grid-template-columns: 9fr 1fr;
-    grid-template-rows: 20px;
+    grid-template-rows: 20px 200px 20px;
     grid-template-areas: 
     "he na"
+    "pa pa"
     "fo fo";
 }
 
@@ -27,16 +59,39 @@
 #burger_icon {
     margin-top: 5px;
     margin-right: 5px;
+    grid-area: na;
+    position: fixed;
+    z-index: 2;
+}
+
+#line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#line_2 {
+    opacity: 0;
+}
+
+#line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .burger_meny_showing #line_1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(0deg) translate(0px, 0px);
 }
 
 .burger_meny_showing #line_2 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    opacity: 1;
 }
 
 .burger_meny_showing #line_3 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(0deg) translate(0px, 0px);
+}
+
+@media screen and (min-width: 700px) {
+    #burger_meny_list {
+        width: 100px;
+    }
+
+    #burger_icon
 }
