@@ -2,6 +2,18 @@
     margin: 0px;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-top: 30px;
+}
+
 #header {
     margin: 2px;
     z-index: 2;
@@ -10,16 +22,18 @@
 body {
     height: 100vh;
     width: 100vw;
+    background: #fce4d4;
 }
 
 #content {
     grid-area: pa;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 200px;
+    grid-template-rows: 50px 200px 200px;
     grid-template-areas: 
     "he"
     "pa"
+    "img"
 }
 
 #startpage_header {
@@ -107,12 +121,70 @@ body {
     transform: rotate(0deg) translate(0px, 0px);
 }
 
+#picture_of_nuts {
+    grid-area: img;
+    position: relative;
+}
+
+#card_layout_parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: 
+    "c1 c2 c3 c4"
+    "c5 c6 c7 c8";
+}
+
+#card1 {
+    grid-area: c1;
+    background: red;
+    margin: 2px;
+}
+
+#card2 {
+    grid-area: c2;
+    background: red;
+    margin: 2px;
+}
+
+#card3 {
+    grid-area: c3;
+    background: red;
+    margin: 2px;
+}
+
+#card4 {
+    grid-area: c4;
+    background: red;
+    margin: 2px;
+}
+
+#card5 {
+    grid-area: c5;
+    background: red;
+    margin: 2px;
+}
+
+#card6 {
+    grid-area: c6;
+    background: red;
+    margin: 2px;
+}
+
+#card7 {
+    grid-area: c7;
+    background: red;
+    margin: 2px;
+}
+
+#card8 {
+    grid-area: c8;
+    background: red;
+    margin: 2px;
+}
+
 @media screen and (min-width: 700px) {
     #burger_meny_list {
         width: 100px;
-    }
-
-    #burger_icon {
-
     }
 }
