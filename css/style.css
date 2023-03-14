@@ -138,49 +138,50 @@ body {
 #card1 {
     grid-area: c1;
     background: red;
-    margin: 2px;
 }
 
 #card2 {
     grid-area: c2;
     background: red;
-    margin: 2px;
 }
 
 #card3 {
     grid-area: c3;
     background: red;
-    margin: 2px;
 }
 
 #card4 {
     grid-area: c4;
     background: red;
-    margin: 2px;
 }
 
 #card5 {
     grid-area: c5;
     background: red;
-    margin: 2px;
 }
 
 #card6 {
     grid-area: c6;
     background: red;
-    margin: 2px;
 }
 
 #card7 {
     grid-area: c7;
     background: red;
-    margin: 2px;
 }
 
 #card8 {
     grid-area: c8;
     background: red;
+}
+
+.cards {
     margin: 2px;
+}
+
+.cards img {
+    height: 500px;
+    width: auto;
 }
 
 @media screen and (min-width: 700px) {
