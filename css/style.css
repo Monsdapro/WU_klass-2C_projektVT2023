@@ -52,7 +52,7 @@ body {
     background-color: #face92;
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     display: flex;
@@ -74,10 +74,6 @@ body {
     "he na"
     "pa pa"
     "fo fo";
-}
-
-.burger_meny_showing #grid_parent {
-
 }
 
 #burger_icon div {
@@ -126,66 +122,72 @@ body {
     position: relative;
 }
 
-#card_layout_parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px;
-    grid-template-areas: 
-    "c1 c2 c3 c4"
-    "c5 c6 c7 c8";
-}
-
-#card1 {
-    grid-area: c1;
-    background: red;
-}
-
-#card2 {
-    grid-area: c2;
-    background: red;
-}
-
-#card3 {
-    grid-area: c3;
-    background: red;
-}
-
-#card4 {
-    grid-area: c4;
-    background: red;
-}
-
-#card5 {
-    grid-area: c5;
-    background: red;
-}
-
-#card6 {
-    grid-area: c6;
-    background: red;
-}
-
-#card7 {
-    grid-area: c7;
-    background: red;
-}
-
-#card8 {
-    grid-area: c8;
-    background: red;
-}
-
-.cards {
-    margin: 2px;
-}
-
-.cards img {
-    height: 500px;
-    width: auto;
-}
-
 @media screen and (min-width: 700px) {
     #burger_meny_list {
         width: 100px;
     }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-container img:hover {
+    box-shadow: black 2px 2px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 20px auto;
+}
+
+ul {
+	margin-left: 20px;
 }
