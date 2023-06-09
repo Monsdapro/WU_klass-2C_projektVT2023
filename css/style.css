@@ -25,17 +25,6 @@ body {
     background: #fce4d4;
 }
 
-#content {
-    grid-area: pa;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 200px 200px;
-    grid-template-areas: 
-    "he"
-    "pa"
-    "img"
-}
-
 #startpage_header {
     grid-area: he;
 }
@@ -49,7 +38,7 @@ body {
 }
 
 #burger_meny_list {
-    background-color: #face92;
+    background-color: #f4caae;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -120,6 +109,10 @@ body {
 #picture_of_nuts {
     grid-area: img;
     position: relative;
+    width: 400px;
+    height: auto;
+    border-radius: 2px;
+    border: black solid 1px;
 }
 
 @media screen and (min-width: 700px) {
@@ -158,4 +151,34 @@ img {
 #seeds {
     height: 200px;
     width: 500px;
+}
+
+#startpage_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    background: #f4caae;
+    height: max-content;
+    width: 80vw;
+    padding: 15px;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#visste_du_att{
+    background: #dc976a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 400px;
+    padding: 20px
 }
